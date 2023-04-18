@@ -1,5 +1,5 @@
 import {useAuth} from './AuthProvider'
-import {useRef} from 'react'
+import {useRef, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 function Signup()
 {
@@ -8,17 +8,21 @@ function Signup()
     const pwdRef = useRef();
     const userRef = useRef();
     const navigate= useNavigate();
+    const [loader,setLoader]= useState(false);
 
     function onAttemptSignup(e)
     {
         e.preventDefault();
         authContext.signup(userRef.current.value,pwdRef.current.value);
 
+        setLoader(true);
         setTimeout(function() {navigate('/admin/dashboard/hotels')},7000);
+        setLoader(false);
     }
 
     return(
         <div className="container-Forms">
+            {loader ? <div className="loader"></div> :
         <div className="loginform">
             <h3>Sign Up</h3>
             <form>
@@ -27,6 +31,7 @@ function Signup()
                 <button onClick={onAttemptSignup}>Login</button>
             </form>
         </div>
+}
         </div>
     )
 }
