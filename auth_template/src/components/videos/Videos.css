@@ -1,0 +1,71 @@
+.home
+{
+    height: 80%;
+    width:100%;
+    /* clip-path: circle(150% at 0 50%);
+    transition: ease-in 2s;
+    transition-property: clip-path; */
+}
+
+.home::before
+{
+    content:'';
+    position: absolute;
+    top: 16.8%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 107.5%;
+    background-color: rgba(0,0,0,0.3);
+}
+
+video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+   
+
+}
+
+.content
+{
+    position: absolute;
+    width:50%;
+    height:100%;
+    top:35%;
+    left:5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   line-height: 1.4;
+   letter-spacing: 0.15rem;
+   font-family: 'Bebas Neue', cursive;
+   
+   font-size: 40pt;
+   color: white;
+
+}
+
+.arrows
+{
+    position: absolute;
+    width: 100%;
+    top:90%;
+    margin: 0 1rem;
+    color:white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+#arrow-right
+{
+    margin-left: 1rem;
+}
+#arrow-left
+{
+    margin-right: 1rem;
+}
+
+
