@@ -43,20 +43,6 @@ function TopPicks()
         setIn(currentDate.toString());
         setOut(tomorrow.toString());
         setLocationID(ID);
-        // const options = {
-        //     method: 'GET',
-        //     headers: {
-        //         'X-RapidAPI-Key': '2b3727760cmsh2708e727198cbf1p188792jsn4f3e2bf2a412',
-        //         'X-RapidAPI-Host': 'hotels-com-provider.p.rapidapi.com'
-        //     }
-        // };
-            
-            // fetch(`https://hotels-com-provider.p.rapidapi.com/v2/regions?locale=en_GB&query=${location}&domain=AE`, options)
-            //     .then(response => response.json())
-            //     .then(response => {
-            //         setLocationID(response.data[0].gaiaId)}
-            //         )
-            //     .catch(err => console.error(err));
     }
 
     useEffect(()=>{
@@ -84,7 +70,7 @@ function TopPicks()
        
 
 
-    },[location,locationID,checkIn,checkOut]);
+    },[location,locationID,checkIn,checkOut,picks]);
 
     return(
 
