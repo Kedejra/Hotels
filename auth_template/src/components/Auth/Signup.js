@@ -13,7 +13,7 @@ function Signup()
     function onAttemptSignup(e)
     {
         e.preventDefault();
-        authContext.signup(userRef.current.value,pwdRef.current.value);
+        authContext.signup(usernameRef.current.value,pwdRef.current.value);
 
         setLoader(true);
         setTimeout(function() {navigate('/admin/dashboard/hotels')},7000);
