@@ -22,7 +22,7 @@ function Signup()
 
     return(
         <div className="container-Forms">
-            {loader ? <div className="loader"></div> :
+            {loader ? <div className="loader"></div> : null}
         <div className="loginform">
             <h3>Sign Up</h3>
             <form>
@@ -31,7 +31,7 @@ function Signup()
                 <button onClick={onAttemptSignup}>Login</button>
             </form>
         </div>
-}
+
         </div>
     )
 }
