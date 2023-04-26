@@ -1,6 +1,7 @@
 import {useAuth} from './AuthProvider'
 import {useRef, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import '../../App.css'
 function Signup()
 {
     const authContext = useAuth();
@@ -16,13 +17,13 @@ function Signup()
         authContext.signup(usernameRef.current.value,pwdRef.current.value);
 
         setLoader(true);
-        setTimeout(function() {navigate('/admin/dashboard/hotels')},7000);
-        setLoader(false);
+        setTimeout(function() {navigate('/admin/dashboard/hotels'); setLoader(false);},7000);
+        
     }
 
     return(
         <div className="container-Forms">
-            {loader ? <div className="loader"></div> : null}
+            {loader ? <div className="loader"></div> : 
         <div className="loginform">
             <h3>Sign Up</h3>
             <form>
@@ -31,7 +32,7 @@ function Signup()
                 <button onClick={onAttemptSignup}>Login</button>
             </form>
         </div>
-
+            }
         </div>
     )
 }

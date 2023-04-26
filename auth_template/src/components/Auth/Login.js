@@ -2,7 +2,7 @@ import {useAuth} from './AuthProvider'
 import {useRef, useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-
+import '../../App.css'
 function Login()
 {
     const authContext = useAuth();
@@ -19,14 +19,15 @@ function Login()
           console.log(user.currentUser);
          setLoader(true);
         //    navigate("/admin/dashboard/hotels");
-          setTimeout(function() {navigate('/admin/dashboard/hotels')},7000);
-          setLoader(false);
+          setTimeout(function() {navigate('/admin/dashboard/hotels'); setLoader(false);},7000);
+           
         
     }
 
     return(
         <div className="container-Forms">
-        {loader ? <div className="loader"></div> :
+            {console.log(loader)}
+        {loader ? <div className="loader"></div> :  
         <div className="loginform">
             <h3>Login</h3>
             <form>
