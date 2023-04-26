@@ -3,6 +3,8 @@ This api uses the hotels.com and pexels API to fetch videos and data. It does ha
 In this project I am leveraging APIs, CSS and react. 
 This project leverages firebase auth.
 
+View at https://travel-hotels-git-main-kedejra.vercel.app/
+
 HOME 
 ![image](https://user-images.githubusercontent.com/65740624/232663768-7b8b905d-8ad8-401e-b643-884045dfbc31.png)
 
