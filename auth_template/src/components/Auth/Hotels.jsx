@@ -43,7 +43,7 @@ function Hotels()
                 return(
                     <div className='card' style={{display:'flex',marginBottom:'1.5rem', borderRadius:'5px', width:'80vw'}} >
                          <div>
-                    <img style={{width:'80%', height:'80%'}} src={x.propertyImage.image.url}alt='Hotel'></img>
+                    <img style={{width:'50%', height:'50%'}} src={x.propertyImage.image.url}alt='Hotel'></img>
                     </div>
                     <div>
                         <h5 style={{marginTop:'1rem'}}>{x.name}</h5>
