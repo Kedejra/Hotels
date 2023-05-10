@@ -21,7 +21,7 @@ function TopPicks()
     {
         e.preventDefault();
 
-        const pickRand=Math.round(Math.random() * (5 - 1) + 1);
+        const pickRand=Math.round(Math.random() * (4 - 1) + 1);
         let place;
         let ID;
         switch(pickRand)
@@ -32,9 +32,9 @@ function TopPicks()
         break;
         case 3: {place='Paris'; ID="2734"}
         break;
-        case 4: {place='Jamaica'; ID="88";}
-        break;
-        case 5: {place='Rome'; ID="3023";}
+        // case 4: {place='Jamaica'; ID="88";}
+        // break;
+        case 4: {place='Rome'; ID="3023";}
         break;
 
         default: place='Dallas';
